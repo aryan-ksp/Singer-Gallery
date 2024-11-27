@@ -8,19 +8,23 @@
 ## 🎨 **Preview**
 
 ### 📷 **Gallery View**
-![Gallery Preview](screenshots/gallery-view.png)
-
-### 📱 **Mobile View**
-![Mobile Preview](screenshots/mobile-view.png)
-
+![Website Static Preview](Screenshots/s1.png)
+![Website Static Preview](Screenshots/s2.png)
+![Website Static Preview](Screenshots/s3.png)
+![Description of the GIF](Screenshots/gif_output.gif)
 
 
 🌟 Key Features
 🖱️ 3D Interactive Tilt Effect: The gallery moves dynamically based on mouse movement.
+
 🎞️ Image Slideshow: Images auto-switch on hover for each gallery box.
+
 🔊 Hover Sounds: Custom audio triggers when you hover over a gallery box.
+
 🌈 Gradient Background: Aesthetic linear gradient for a beautiful backdrop.
+
 📱 Responsive Design: Optimized for desktop, tablet, and mobile devices.
+
 🖼️ Favicon: A custom favicon to complete the professional touch.
 
 🛠️ Technologies Used
