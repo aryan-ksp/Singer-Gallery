@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Singers Gallery</title>
+    <link rel="stylesheet" href="gallery_styles.css">
+    <link rel="icon" href="Favicon/favicon2.png" type="image/png">
+</head>
+<body>
+    <!-- Background particle effect -->
+    <div id="particle-background"></div>
+
+    <header>
+        <h1>Aryan's Top Singers Gallery</h1>
+        <h2>A Visual Journey of Musical Legends</h2>
+    </header>
+
+    <section class="gallery">
+        <!-- Add image URLs in the src attribute -->
+        <div class="image-box" data-sound="sonu_nigam.mp3">
+            <img src="https://m.media-amazon.com/images/I/61+R4CnLSrL.jpg" alt="Sample Image">
+        </div>
+        <div class="image-box" data-sound="jass_manak.mp3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQtrbKFwqRgYUJuQrf9MJtPgVWLBoahTDhQ&s" alt="Sample Image">
+        </div>
+        <div class="image-box" data-sound="diljit.mp3">
+            <img src="https://pbs.twimg.com/media/DydMDfeWwAAxA_Q.jpg" alt="Sample Image">
+        </div>
+        <div class="image-box" data-sound="justin.mp3">
+            <img src="https://www.udiscovermusic.com/wp-content/uploads/2019/03/Justin-Bieber-Press-Shot-1000x600.jpg"Sample Image">
+        </div>
+        <div class="image-box" data-sound="selena.mp3">
+            <img src="https://i.redd.it/ghi7pykgbz9b1.jpg" alt="Sample Image">
+        </div>
+        <div class="image-box" data-sound="hardy.mp3">
+            <img src="https://i.pinimg.com/736x/0e/ad/1d/0ead1d224d69c0419b4df5c518679798.jpg" alt="Sample Image">
+        </div>
+        <div class="image-box" data-sound="parmish.mp3">
+            <img src="https://blackhattalent.com/wp-content/uploads/2023/09/Parmish-Verma-1.jpg" alt="Sample Image">
+        </div>
+        <div class="image-box" data-sound="karan.mp3">
+            <img src="https://rollingstoneindia.com/wp-content/uploads/2024/09/Karan-Aujla-press-photo--e1727076086769.jpg" alt="Sample Image">
+        </div>
+    </section>
+
+    <audio id="hoverSound"></audio>
+
+    <!-- Script for interactive hover sound -->
+    <script>
+        // Interactive hover sound
+        const hoverSound = document.getElementById("hoverSound");
+        document.querySelectorAll(".image-box").forEach((box) => {
+            box.addEventListener("mouseenter", () => {
+                const sound = box.dataset.sound;
+                hoverSound.src = sound;
+                hoverSound.play();
+            });
+            box.addEventListener("mouseleave", () => {
+                hoverSound.pause();
+                hoverSound.currentTime = 0;
+            });
+        });
+    </script>
+
+</body>
+</html>
